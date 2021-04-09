@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contentarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contentarea .content1 {
+  width: 666px;
+  height: 1092px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.contentarea .content1 .name {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  color: white;
+}
+
+.contentarea .content1 .lineid {
+  position: absolute;
+  top: 26%;
+  left: 46%;
+  color: black;
+  font-size: 23px;
+}
+
+.contentarea .content1 .qrcodewrap {
+  position: absolute;
+  top: 41%;
+  left: 33%;
+}
+
+.contentarea .content1 .qrcodewrap img {
+  width: 230px;
+  height: 230px;
+}
+
+.contentarea .content2 {
+  width: 666px;
+  height: 1092px;
+  position: relative;
+}
+
+.contentarea .content2 .name {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  color: white;
+}
+
+.contentarea .content2 .lineid {
+  position: absolute;
+  top: 29%;
+  left: 46%;
+  color: black;
+  font-size: 23px;
+}
+
+.contentarea .content2 .qrcodewrap {
+  position: absolute;
+  top: 41%;
+  left: 33%;
+}
+
+.contentarea .content2 .qrcodewrap img {
+  width: 230px;
+  height: 230px;
+}
+
+.smallcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f8f8f8;
+  display: flex;
+}
+
+.smallcard .contentarea {
+  width: 60%;
+  height: 100%;
+  border-right: solid 1px;
+}
+
+.smallcard .alleypin {
+  height: 1100px;
+}
+
+.smallcard .etalk {
+  border-top: solid 1px;
+}
+
+.smallcard .adjustarea {
+  width: 40%;
+  height: 100%;
+}
+
+.smallcard .adjustarea .tabbar {
+  height: 70px;
+  border-bottom: solid 1px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: NotoSansTC;
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.48;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.smallcard .adjustarea .tabbar .tab1,
+.smallcard .adjustarea .tabbar .tab2 {
+  width: 30%;
+  height: 100%;
+  border-right: solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.smallcard .adjustarea .tabbar .tab3 {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.smallcard .type {
+  height: 70px;
+  border-bottom: solid 1px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: NotoSansTC;
+  font-size: 37px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.49;
+  letter-spacing: normal;
+  color: #000000;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.smallcard .clinicname,
+.smallcard .idname,
+.smallcard .qrcode {
+  height: 70px;
+  border-bottom: solid 1px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.smallcard .clinicname .title,
+.smallcard .idname .title,
+.smallcard .qrcode .title {
+  width: 30%;
+  height: 100%;
+  border-right: solid 1px;
+  font-family: NotoSansTC;
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.48;
+  letter-spacing: normal;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.smallcard .clinicname .content,
+.smallcard .idname .content,
+.smallcard .qrcode .content {
+  width: 70%;
+  height: 100%;
+  font-family: NotoSansTC;
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.48;
+  letter-spacing: normal;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.smallcard .clinicname .content .genbtn,
+.smallcard .idname .content .genbtn,
+.smallcard .qrcode .content .genbtn {
+  width: 30%;
+  font-family: NotoSansTC;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+}
+
+.smallcard .clinicname .content .wrap,
+.smallcard .idname .content .wrap,
+.smallcard .qrcode .content .wrap {
+  width: 25%;
+  height: 100%;
+  border-right: solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 5px;
+}
+
+.smallcard .clinicname .content .wrap span,
+.smallcard .idname .content .wrap span,
+.smallcard .qrcode .content .wrap span {
+  font-family: NotoSansTC;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+}
+
+.smallcard .clinicname .content .wrap input,
+.smallcard .idname .content .wrap input,
+.smallcard .qrcode .content .wrap input {
+  width: 80px;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px;
+}
+
+.smallcard .clinicname .adjustarea,
+.smallcard .idname .adjustarea,
+.smallcard .qrcode .adjustarea {
+  width: 70%;
+  height: 100%;
+  border-right: solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.smallcard .clinicname .adjustarea .url,
+.smallcard .clinicname .adjustarea .color,
+.smallcard .idname .adjustarea .url,
+.smallcard .idname .adjustarea .color,
+.smallcard .qrcode .adjustarea .url,
+.smallcard .qrcode .adjustarea .color {
+  width: 50%;
+  height: 100%;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.smallcard .clinicname .adjustarea .url span,
+.smallcard .clinicname .adjustarea .color span,
+.smallcard .idname .adjustarea .url span,
+.smallcard .idname .adjustarea .color span,
+.smallcard .qrcode .adjustarea .url span,
+.smallcard .qrcode .adjustarea .color span {
+  font-family: NotoSansTC;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.smallcard .clinicname .adjustarea .url input,
+.smallcard .clinicname .adjustarea .color input,
+.smallcard .idname .adjustarea .url input,
+.smallcard .idname .adjustarea .color input,
+.smallcard .qrcode .adjustarea .url input,
+.smallcard .qrcode .adjustarea .color input {
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 1px;
+  width: 100px;
+}
+
+.smallcard .download {
+  height: 70px;
+  border-bottom: solid 1px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.smallcard .download .zoomarea {
+  width: 30%;
+  height: 100%;
+  border-right: solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.smallcard .download .zoomarea span {
+  font-family: NotoSansTC;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.smallcard .download .zoomarea input {
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 1px;
+  width: 100px;
+}
+
+.smallcard .download .downloadbtn {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.smallcard .download .downloadbtn img {
+  width: 250px;
+}
+/*# sourceMappingURL=smallcard.css.map */

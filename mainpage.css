@@ -1,0 +1,663 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f8f8f8;
+}
+
+.wrap .alleypinstandcard,
+.wrap .etalkstandcard {
+  width: 45%;
+  height: 825px;
+  border-right: solid 1px;
+  overflow: scroll;
+  border-bottom: solid 1px;
+}
+
+.wrap .alleypinstandcard .content,
+.wrap .etalkstandcard .content {
+  position: relative;
+}
+
+.wrap .alleypinstandcard .content .logowrap,
+.wrap .etalkstandcard .content .logowrap {
+  position: absolute;
+  top: 0;
+  left: 70%;
+}
+
+.wrap .alleypinstandcard .content .logowrap img,
+.wrap .etalkstandcard .content .logowrap img {
+  width: auto;
+  height: 250px;
+}
+
+.wrap .alleypinstandcard .content .clinicname,
+.wrap .etalkstandcard .content .clinicname {
+  position: absolute;
+  width: 600px;
+  text-align: center;
+  top: 20%;
+  left: 55%;
+}
+
+.wrap .alleypinstandcard .content .clinicname h3,
+.wrap .etalkstandcard .content .clinicname h3 {
+  color: white;
+  font-size: 50px;
+}
+
+.wrap .alleypinstandcard .content .idname,
+.wrap .etalkstandcard .content .idname {
+  position: absolute;
+  width: 500px;
+  text-align: center;
+  top: 47%;
+  left: 61%;
+}
+
+.wrap .alleypinstandcard .content .idname h3,
+.wrap .etalkstandcard .content .idname h3 {
+  font-size: 30px;
+}
+
+.wrap .alleypinstandcard .content .qrcodewrap,
+.wrap .etalkstandcard .content .qrcodewrap {
+  position: absolute;
+  left: 66%;
+  top: 63%;
+}
+
+.wrap .alleypinstandcard .content .qrcodewrap img,
+.wrap .etalkstandcard .content .qrcodewrap img {
+  width: 350px;
+  height: 350px;
+}
+
+.wrap .alleypintoolarea {
+  width: 55%;
+  border-bottom: solid 1px;
+}
+
+.wrap .alleypintoolarea .tabbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-bottom: solid 1px;
+}
+
+.wrap .alleypintoolarea .tabbar .standcardbtn {
+  width: 30%;
+  border-right: solid 1px;
+  font-size: 37px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.49;
+  letter-spacing: normal;
+  color: #ffffff;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .alleypintoolarea .tabbar .smallcardbtn {
+  width: 30%;
+  border-right: solid 1px;
+  border-right: solid 1px;
+  font-size: 37px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.49;
+  letter-spacing: normal;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .alleypintoolarea .tabbar .flowbtn {
+  width: 40%;
+  border-right: solid 1px;
+  font-size: 37px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.49;
+  letter-spacing: normal;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .alleypintoolarea .type {
+  width: 100%;
+  height: 72px;
+  border-bottom: solid 1px;
+  font-family: NotoSansTC;
+  font-size: 37px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.wrap .alleypintoolarea .type:hover {
+  background-color: black;
+  width: 100%;
+  color: white;
+}
+
+.wrap .alleypintoolarea .cliniclogo {
+  width: 100%;
+  height: 72px;
+  border-bottom: solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap .alleypintoolarea .cliniclogo .title {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-right: solid 1px;
+  font-family: NotoSansTC;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.wrap .alleypintoolarea .logoadjust {
+  height: 118px;
+  width: 100%;
+  border-bottom: solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap .alleypintoolarea .logoadjust .left {
+  width: 30%;
+  height: 100%;
+  border-right: solid 1px;
+}
+
+.wrap .alleypintoolarea .logoadjust .right {
+  width: 70%;
+}
+
+.wrap .alleypintoolarea .logoadjust .right h4 {
+  font-family: NotoSansTC;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  margin-left: 15px;
+}
+
+.wrap .alleypintoolarea .logoadjust .right .adjustarea {
+  margin-left: 15px;
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.wrap .alleypintoolarea .logoadjust .right .adjustarea .width,
+.wrap .alleypintoolarea .logoadjust .right .adjustarea .height,
+.wrap .alleypintoolarea .logoadjust .right .adjustarea .x,
+.wrap .alleypintoolarea .logoadjust .right .adjustarea .y {
+  width: 25%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px;
+}
+
+.wrap .alleypintoolarea .logoadjust .right .adjustarea .width input,
+.wrap .alleypintoolarea .logoadjust .right .adjustarea .height input,
+.wrap .alleypintoolarea .logoadjust .right .adjustarea .x input,
+.wrap .alleypintoolarea .logoadjust .right .adjustarea .y input {
+  border: none;
+  border-bottom: solid 3px;
+  width: 60%;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.wrap .alleypintoolarea .logoadjust .right .adjustarea .width span,
+.wrap .alleypintoolarea .logoadjust .right .adjustarea .height span,
+.wrap .alleypintoolarea .logoadjust .right .adjustarea .x span,
+.wrap .alleypintoolarea .logoadjust .right .adjustarea .y span {
+  font-family: NotoSansTC;
+  font-size: 17px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.wrap .alleypintoolarea .clinicname {
+  width: 100%;
+  height: 72px;
+  border-bottom: solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap .alleypintoolarea .clinicname .title {
+  width: 30%;
+  border-right: solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .alleypintoolarea .clinicname .title span {
+  font-family: NotoSansTC;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.wrap .alleypintoolarea .clinicname .right {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap .alleypintoolarea .clinicname .right .inputwrap,
+.wrap .alleypintoolarea .clinicname .right .clnicx,
+.wrap .alleypintoolarea .clinicname .right .clnicy {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+}
+
+.wrap .alleypintoolarea .clinicname .right .inputwrap input,
+.wrap .alleypintoolarea .clinicname .right .clnicx input,
+.wrap .alleypintoolarea .clinicname .right .clnicy input {
+  border: none;
+  border-bottom: solid 3px;
+  width: 60%;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.wrap .alleypintoolarea .clinicname .right .inputwrap span,
+.wrap .alleypintoolarea .clinicname .right .clnicx span,
+.wrap .alleypintoolarea .clinicname .right .clnicy span {
+  font-family: NotoSansTC;
+  font-size: 17px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.wrap .alleypintoolarea .clinicname .right .fzadjust,
+.wrap .alleypintoolarea .clinicname .right .idpadjust {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+}
+
+.wrap .alleypintoolarea .clinicname .right .fzadjust input,
+.wrap .alleypintoolarea .clinicname .right .idpadjust input {
+  border: none;
+  border-bottom: solid 3px;
+  width: 60%;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.wrap .alleypintoolarea .clinicname .right .fzadjust span,
+.wrap .alleypintoolarea .clinicname .right .idpadjust span {
+  font-family: NotoSansTC;
+  font-size: 17px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.wrap .alleypintoolarea .qrcode {
+  width: 100%;
+  height: 72px;
+  border-bottom: solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.wrap .alleypintoolarea .qrcode .title {
+  width: 30%;
+  height: 100%;
+  border-right: solid 1px;
+  font-family: NotoSansTC;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .alleypintoolarea .qrcode .inputurl {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-right: solid 1px;
+}
+
+.wrap .alleypintoolarea .qrcode .inputurl span {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.wrap .alleypintoolarea .qrcode .inputurl input {
+  width: 80%;
+  border: none;
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: transparent;
+  border-bottom: solid 3px;
+  margin-top: 5px;
+}
+
+.wrap .alleypintoolarea .qrcode .codestyle {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .alleypintoolarea .qrcode .codestyle .colorwrap {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrap .alleypintoolarea .qrcode .codestyle .colorwrap span {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.wrap .alleypintoolarea .qrcode .codestyle .colorwrap input {
+  width: 80%;
+  border: none;
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: transparent;
+  border-bottom: solid 3px;
+  margin-top: 5px;
+}
+
+.wrap .alleypintoolarea .qrcode .codestyle .genbtn {
+  width: 50%;
+  height: 100%;
+  color: black;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.wrap .alleypintoolarea .qrcode .codestyle .genbtn:hover {
+  background-color: black;
+  color: white;
+}
+
+.wrap .alleypintoolarea .qrcode .codeadjust {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .alleypintoolarea .qrcode .codeadjust span {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.wrap .alleypintoolarea .qrcode .codeadjust input {
+  width: 80%;
+  border: none;
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: transparent;
+  border-bottom: solid 3px;
+  margin-top: 5px;
+}
+
+.wrap .alleypintoolarea .qrcode .codeadjust .genbtn {
+  width: 30%;
+  height: 100%;
+  color: black;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.wrap .alleypintoolarea .qrcode .codeadjust .genbtn:hover {
+  background-color: black;
+  color: white;
+}
+
+.wrap .alleypintoolarea .scaleadjust {
+  width: 100%;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px;
+}
+
+.wrap .alleypintoolarea .scaleadjust span {
+  font-family: NotoSansTC;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.wrap .alleypintoolarea .scaleadjust input {
+  border: none;
+  border-bottom: solid 3px;
+  background-color: transparent;
+  width: 250px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.wrap .alleypintoolarea .downloadarea {
+  width: 100%;
+  height: 195px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .alleypintoolarea .downloadarea img {
+  height: 60px;
+}
+/*# sourceMappingURL=mainpage.css.map */

@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin standardfont {
+    font-family: NotoSansTC;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.48;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.contentarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .content1 {
+        width: 666px;
+        height: 1092px;
+        margin-bottom: 20px;
+        position: relative;
+        .name {
+            position: absolute;
+            top: 10%;
+            left: 25%;
+            color: white;
+        }
+        .lineid {
+            position: absolute;
+            top: 26%;
+            left: 46%;
+            color: black;
+            font-size: 23px;
+        }
+        .qrcodewrap {
+            position: absolute;
+            top: 41%;
+            left: 33%;
+            img {
+                width: 230px;
+                height: 230px;
+            }
+        }
+    }
+    .content2 {
+        width: 666px;
+        height: 1092px;
+        position: relative;
+        .name {
+            position: absolute;
+            top: 10%;
+            left: 25%;
+            color: white;
+        }
+        .lineid {
+            position: absolute;
+            top: 29%;
+            left: 46%;
+            color: black;
+            font-size: 23px;
+        }
+        .qrcodewrap {
+            position: absolute;
+            top: 41%;
+            left: 33%;
+            img {
+                width: 230px;
+                height: 230px;
+            }
+        }
+    }
+}
+
+.smallcard {
+    display: flex;
+    background-color: #f8f8f8;
+    // height: 825px;
+    display: flex;
+    .contentarea {
+        width: 60%;
+        height: 100%;
+        border-right: solid 1px;
+    }
+    .alleypin {
+        height: 1100px;
+    }
+    .etalk {
+        border-top: solid 1px;
+    }
+    .adjustarea {
+        width: 40%;
+        height: 100%;
+        .tabbar {
+            height: 70px;
+            border-bottom: solid 1px;
+            width: 100%;
+            display: flex;
+            @include standardfont;
+            .tab1,
+            .tab2 {
+                width: 30%;
+                height: 100%;
+                border-right: solid 1px;
+                @include center;
+            }
+            .tab3 {
+                width: 40%;
+                height: 100%;
+                @include center;
+            }
+        }
+    }
+    .type {
+        height: 70px;
+        border-bottom: solid 1px;
+        width: 100%;
+        display: flex;
+        font-family: NotoSansTC;
+        font-size: 37px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.49;
+        letter-spacing: normal;
+        color: #000000;
+        @include center;
+    }
+    .clinicname,
+    .idname,
+    .qrcode {
+        height: 70px;
+        border-bottom: solid 1px;
+        width: 100%;
+        display: flex;
+        .title {
+            width: 30%;
+            height: 100%;
+            border-right: solid 1px;
+            @include standardfont;
+            @include center;
+        }
+        .content {
+            width: 70%;
+            height: 100%;
+            @include standardfont;
+            @include center;
+            .genbtn {
+                width: 30%;
+                font-family: NotoSansTC;
+                font-size: 17px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.47;
+                letter-spacing: normal;
+                @include center;
+                color: #000000;
+            }
+            .wrap {
+                width: 25%;
+                height: 100%;
+                border-right: solid 1px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 5px;
+                span {
+                    font-family: NotoSansTC;
+                    font-size: 17px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.47;
+                    letter-spacing: normal;
+                }
+                input {
+                    width: 80px;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: solid 1px;
+                }
+            }
+        }
+        .adjustarea {
+            width: 70%;
+            height: 100%;
+            border-right: solid 1px;
+            display: flex;
+            .url,
+            .color {
+                width: 50%;
+                height: 100%;
+                margin-left: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                span {
+                    // height: 25px;
+                    font-family: NotoSansTC;
+                    font-size: 17px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.47;
+                    letter-spacing: normal;
+                    // text-align: left;
+                    color: #000000;
+                }
+                input {
+                    border: none;
+                    background-color: transparent;
+                    border-bottom: solid 1px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+    .download {
+        height: 70px;
+        border-bottom: solid 1px;
+        width: 100%;
+        display: flex;
+        .zoomarea {
+            width: 30%;
+            height: 100%;
+            border-right: solid 1px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            span {
+                font-family: NotoSansTC;
+                font-size: 17px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.47;
+                letter-spacing: normal;
+                // text-align: left;
+                color: #000000;
+            }
+            input {
+                border: none;
+                background-color: transparent;
+                border-bottom: solid 1px;
+                width: 100px;
+            }
+        }
+        .downloadbtn {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 250px;
+            }
+        }
+    }
+}

@@ -1,0 +1,327 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="stylesheet" href="smallcard.css">
+    <title>smallcard</title>
+</head>
+
+<body>
+    <div id="app" class="smallcard">
+        <div class="contentarea">
+            <div class="content1" id="content1">
+                <h3 class="name" :style="{left:lineclinicleft+'%',top:lineclinictop+'%',fontSize:lineclinicfz+'px'}">
+                    {{lineclinicname}}
+                </h3>
+                <h4 class="lineid" :style="{left:lineidleft+'%',top:lineidtop+'%',fontSize:lineidfz+'px'}">
+                    {{lineidname}}
+                </h4>
+                <div class="qrcodewrap">
+                    <img id='barcode1' class="barcode" src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp" alt="" />
+                </div>
+                <img src="./media/smallcard/linesmallcard.jpg" alt="">
+            </div>
+            <div class="content2" id="content2">
+                <h3 class="name" :style="{left:etalkclinicleft+'%',top:etalkclinictop+'%',fontSize:etalkclinicfz+'px'}">
+                    {{etalkclinicname}}
+                </h3>
+                <h4 class="lineid" :style="{left:etalklineidleft+'%',top:etalklineidtop+'%',fontSize:etalklineidfz+'px'}">
+                    {{lineidname}}
+                </h4>
+                <div class="qrcodewrap">
+                    <img id='barcode2' class="barcode" src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp" alt="" />
+                </div>
+                <img src="./media/smallcard/1.talksmallcard.jpg" alt="">
+            </div>
+        </div>
+        <div class="adjustarea">
+            <div class="alleypin">
+
+                <div class="tabbar">
+                    <div class="tab1">
+                        <a href="./index.html">
+                            <span>立牌製作</span>
+                        </a>
+
+                    </div>
+                    <div class="tab2">
+                        <span>小卡製作</span>
+                    </div>
+                    <div class="tab3">
+                        <span>流程圖製作</span>
+                    </div>
+                </div>
+                <div class="type">
+                    <span>Line</span>
+                </div>
+                <div class="clinicname">
+                    <div class="title">
+                        診所名稱
+                    </div>
+                    <div class="content">
+                        <div class="wrap">
+                            <span>診所名稱</span>
+                            <input type="text" class="name" v-model="lineclinicname">
+                        </div>
+                        <div class="wrap">
+                            <span>x位置</span>
+                            <input type="text" class="left" v-model="lineclinicleft">
+                        </div>
+                        <div class="wrap">
+                            <span>y位置</span>
+                            <input type="text" class="top" v-model="lineclinictop">
+                        </div>
+                        <div class="wrap">
+                            <span>字體大小</span>
+                            <input type="text" class="fz" v-model="lineclinicfz">
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="idname">
+                    <div class="title">
+                        搜尋ID
+                    </div>
+                    <div class="content">
+                        <div class="wrap">
+                            <span>ID名稱</span>
+                            <input type="text" class="name" v-model="lineidname">
+                        </div>
+                        <div class="wrap">
+                            <span>x位置</span>
+                            <input type="text" class="left" v-model="lineidleft">
+                        </div>
+                        <div class="wrap">
+                            <span>y位置</span>
+                            <input type="text" class="top" v-model="lineidtop">
+                        </div>
+                        <div class="wrap">
+                            <span>字體大小</span>
+                            <input type="text" class="fz" v-model="lineidfz">
+                        </div>
+                    </div>
+                </div>
+                <div class="qrcode">
+                    <div class="title">
+                        QRCODE
+                    </div>
+                    <div class="content">
+                        <div class="adjustarea">
+                            <div class="url">
+                                <span>URL</span>
+                                <input type="text" id="qrcode1">
+                            </div>
+                            <div class="color">
+                                <span>Color</span>
+                                <input type="text" v-model="lineqrcolor">
+                            </div>
+                        </div>
+
+                        <div class="genbtn" @click="linegenerateBarCode">
+                            <span>GEN</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="download">
+                    <div class="zoomarea">
+                    </div>
+                    <div class="downloadbtn" onclick="downloadtable(1)">
+                        <img src="./media/Group 3.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="etalk">
+                <div class="type">
+                    <span>1.talk</span>
+                </div>
+                <div class="clinicname">
+                    <div class="title">
+                        診所名稱
+                    </div>
+                    <div class="content">
+                        <div class="wrap">
+                            <span>診所名稱</span>
+                            <input type="text" class="name" v-model="etalkclinicname">
+                        </div>
+                        <div class="wrap">
+                            <span>x位置</span>
+                            <input type="text" class="left" v-model="etalkclinicleft">
+                        </div>
+                        <div class="wrap">
+                            <span>y位置</span>
+                            <input type="text" class="top" v-model="etalkclinictop">
+                        </div>
+                        <div class="wrap">
+                            <span>字體大小</span>
+                            <input type="text" class="fz" v-model="etalkclinicfz">
+                        </div>
+                    </div>
+                </div>
+                <div class="idname">
+                    <div class="title">
+                        搜尋ID
+                    </div>
+                    <div class="content">
+                        <div class="wrap">
+                            <span>ID名稱</span>
+                            <input type="text" class="name" v-model="etalklineidname">
+                        </div>
+                        <div class="wrap">
+                            <span>x位置</span>
+                            <input type="text" class="left" v-model="etalklineidleft">
+                        </div>
+                        <div class="wrap">
+                            <span>y位置</span>
+                            <input type="text" class="top" v-model="etalklineidtop">
+                        </div>
+                        <div class="wrap">
+                            <span>字體大小</span>
+                            <input type="text" class="fz" v-model="etalklineidfz">
+                        </div>
+                    </div>
+                </div>
+                <div class="qrcode">
+                    <div class="title">
+                        QRCODE
+                    </div>
+                    <div class="content">
+                        <div class="adjustarea">
+                            <div class="url">
+                                <span>URL</span>
+                                <input type="text" id="qrcode2">
+                            </div>
+                            <div class="color">
+                                <span>Color</span>
+                                <input type="text" v-model="etalkqrcolor">
+                            </div>
+                        </div>
+
+                        <div class="genbtn" @click="etalkgenerateBarCode">
+                            <span>GEN</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="download">
+                    <div class="zoomarea">
+
+                        <!-- <span>縮放</span>
+                        <input type="text"> -->
+
+                    </div>
+                    <div class="downloadbtn" onclick="downloadtable(2)">
+                        <img src="./media/Group 3.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            lineclinicname: '凡凡牙醫診所',
+            lineclinicleft: '23',
+            lineclinictop: '4',
+            lineclinicfz: '60',
+            lineidname: '@doctor',
+            lineidleft: '46',
+            lineidtop: '26',
+            lineidfz: '23',
+            lineqrcolor: '',
+            etalkclinicname: '醫點通牙醫診所',
+            etalkclinicleft: '19',
+            etalkclinictop: '4',
+            etalkclinicfz: '60',
+            etalklineidname: '@doctor',
+            etalklineidleft: '46',
+            etalklineidtop: '27.5',
+            etalklineidfz: '23',
+            etalkqrcolor: ''
+
+
+        },
+        methods: {
+            linegenerateBarCode() {
+                // console.log('按到')
+                var nric = document.querySelector('#qrcode1').value;
+                var color = this.lineqrcolor
+                console.log(color)
+                var url = 'https://api.qrserver.com/v1/create-qr-code/?data=' + nric + '&color=' + color;
+                console.log(url)
+                document.querySelector('#barcode1').setAttribute('src', url);
+            },
+            etalkgenerateBarCode() {
+                var nric = document.querySelector('#qrcode2').value;
+                var color = this.etalkqrcolor
+                console.log(color)
+                var url = 'https://api.qrserver.com/v1/create-qr-code/?data=' + nric + '&color=' + color;
+                document.querySelector('#barcode2').setAttribute('src', url);
+            }
+        },
+    })
+
+    function downloadtable(idnumber) {
+
+        var node = document.getElementById('content' + idnumber);
+
+        domtoimage.toPng(node)
+            .then(function(dataUrl) {
+                var img = new Image();
+                img.src = dataUrl;
+                name = this.lineclinicname;
+
+                downloadURI(dataUrl, name + ".jpg")
+            })
+            .catch(function(error) {
+                console.error('oops, something went wrong!', error);
+            });
+
+    }
+
+
+
+    function downloadURI(uri, name) {
+        var link = document.createElement("a");
+        link.download = name;
+        link.href = uri;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        delete link;
+    }
+
+    function readURL(input) {
+
+        if (input.files && input.files[0]) {
+
+            var imageTagID = input.getAttribute("targetID");
+
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+
+                var img = document.getElementById(imageTagID);
+
+                img.setAttribute("src", e.target.result)
+
+            }
+
+            reader.readAsDataURL(input.files[0]);
+
+        }
+
+    }
+</script>
+
+</html>
